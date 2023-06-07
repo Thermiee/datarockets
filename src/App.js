@@ -3,8 +3,13 @@ import './App.css';
 
 function App() {
   return (
-    <div>Hello</div>
-  );
-}
+    <>
+      <Calculator />
+      <Layout logo={Logo}>
 
-export default App;
+      </Layout>
+    </>
+      );
+      }
+
+      export default App;
