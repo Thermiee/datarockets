@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useGlobalContext } from '../../context';
+import { useGlobalContext } from '../../Context';
 
 // styles
 import s from './FormSection.module.css';
@@ -14,7 +14,9 @@ import InputField from '../InputField';
 import TipGrid from '../TipGrid';
 
 const FormSection = () => {
-  const { bill, tip, split, dispatch } = useGlobalContext();
+  const {
+    bill, tip, split, dispatch,
+  } = useGlobalContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();

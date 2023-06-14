@@ -1,15 +1,22 @@
+import React from 'react';
+
+// components
+import Layout from './components/Layout';
+import Calculator from './components/Calculator';
+import FormSection from './components/FormSection';
+import ResultSection from './components/ResultSection';
 import Logo from './images/logo.svg';
-import './App.css';
 
 function App() {
   return (
     <>
       <Calculator />
       <Layout logo={Logo}>
-
+        <FormSection />
+        <ResultSection />
       </Layout>
     </>
-      );
-      }
+  );
+}
 
-      export default App;
+export default App;

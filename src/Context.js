@@ -1,7 +1,5 @@
 import React, { useContext, useReducer } from 'react';
-import { reducer } from './Reducer';
-
-import { initialState } from './Reducer';
+import { reducer, initialState } from './Reducer';
 
 const AppContext = React.createContext();
 
@@ -15,8 +13,6 @@ const AppProvider = ({ children }) => {
   );
 };
 
-export const useGlobalContext = () => {
-  return useContext(AppContext);
-};
+export const useGlobalContext = () => useContext(AppContext);
 
 export default AppProvider;

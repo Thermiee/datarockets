@@ -2,7 +2,9 @@ import { useEffect, useCallback } from 'react';
 import { useGlobalContext } from '../Context';
 
 const Calculator = () => {
-  const { bill, tip, split, dispatch } = useGlobalContext();
+  const {
+    bill, tip, split, dispatch,
+  } = useGlobalContext();
 
   const calculateCreator = () => ({
     type: 'CALCULATE_TOTAL',
